@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<title></title>
+</head>
+<body>
+<div class="maindiv" id="main-div">
+	<div id="headerdefinition-div">
+		<h1>Step 4:Least Privilege Access Control</h1>
+		<p><i>Ennorce priniple of least privilegewith identity and Access Management (IAM) Users,groups,and policies and temporary credentials.</i></p>
+	</div>
+	<div id="table-div">
+		<div id="table-div-trianglepart-left">
+			<div id="first-div-triangle">
+				<p>AWS Account<br>
+				Owner(Root)</p>
+			</div>
+			<div id="second-div-triangle">
+				<p>
+					AWS IAM<br>
+					User
+				</p>
+
+			</div>
+			
+			<div id="third-div-triangle">
+				<p>
+					Temporary
+					<br>Seurity<br>
+					Credentials
+				</p>
+			</div>
+			<img  id="triangleimage" src="images/triangle.png">
+		</div>
+		<div id="table-div-tablepart-right">
+			<table>
+				<tr id="firstrow">
+					<th>Permission</th>
+					<th>Examples</th>
+				</tr>
+				<tr   id="secondrow"><td>Unrestricted access to all eabled services and resources</td>
+					<td>
+						Action:*<br>
+						Effect:Allow
+						<br>Resources:*<br>
+						(implicit)
+					</td>
+					</tr>
+				<tr id="thirdrow"><td>Access restricte by Group and User policies</td>
+					<td>
+						Action:<br>
+					['s3:*','sts:Get*']<br>
+						Effect:Allow
+						<br>Resources:*<br>
+						
+					</td></tr>
+				<tr id="fourthrow"><td id="firstcolumn">Access restricted by generating identity and further by policies use to generate token</td>
+					<td id="secondcolumn">Action:['s3:Get*']<br>
+						Effect:Allow
+						<br>Resources:<br>
+						'rn:aws:s3:::mybuket/*'</td></tr>
+			</table>
+		</div>
+	</div>
+	<div id="amazonlogo-div">
+		<img src="images/amazon.png" id="amazon">
+		<img src="images/clo.jpeg" id="clouds">
+	</div>
+	
+</div>
+</body>
+</html>
