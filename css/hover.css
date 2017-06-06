@@ -1,0 +1,26 @@
+.headerpart {background-color: grey;
+color: white; 
+padding: 15px;}
+.listpart {width: 30%;
+	float: left;
+	padding-top: 20px;
+}
+.definitionpart {overflow: auto;
+	background-color:white;
+display: inline-block;}
+.listpart ul {padding-left: 5px;
+	
+
+list-style-type: none;;}
+.listpart ul li {margin-bottom: 10px;
+background-color: #33b5e5;
+text-align: center;
+padding-top: 5px;
+width: 100px;
+height: 30px;}
+.citydefinitionpart{float: left;
+width: 70%;}
+.footerpart {
+	background-color: grey;
+	padding: 15px;
+}
